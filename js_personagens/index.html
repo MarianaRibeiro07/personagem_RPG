@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de personagem de RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Encontre uma introdução para o seu personagem!</h2>
+    <form>
+        <p class="nomee">
+            Digite o nome do seu personagem:
+            <input type="text" id="nome">
+        </p>
+
+        <label>Escolha uma classe para o seu personagem:</label>
+        <select id="classe">
+            <option value="Mago">Mago</option>
+            <option value="Bruxo">Bruxo</option>
+            <option value="Bárbaro">Bárbaro</option>
+            <option value="Elfo">Elfo</option>
+            <option value="Fada">Fada</option>
+            <option value="Híbrido">Híbrido</option>
+        </select>
+
+        <br><br>
+
+        <label>Escolha uma habilidade para o seu personagem:</label>
+        <select id="habilidade">
+            <option value="Força">Força</option>
+            <option value="Defesa">Defesa</option>
+            <option value="Inteligência">Inteligência</option>
+            <option value="Agilidade">Agilidade</option>
+            <option value="Magia">Magia</option>
+        </select>
+
+        <br><br>
+
+        <input type="button" value="Exibir" onclick="iniciar()">
+        <input type="reset" value="Cancelar">
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="js.js"></script>
+</body>
+</html>
